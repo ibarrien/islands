@@ -6,8 +6,9 @@ whether up/down/left/right neighbor is valid.
 
 
 Notes:
-    Current approach is union find.
-    Needs fix when (0,0) entry is 0.
+    Current implemetation does not work 100% due to component size counting.
+    A simpler solution is the more common depth-first search where all
+    adjacent neighbors are recursively checked per call in the main loop.
     
 @author: ibarrien
 """
